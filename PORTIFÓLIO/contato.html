@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato</title>
+</head>
+
+<style>
+
+@font-face {
+    font-family:'thebold';
+    src: url('theboldfont.ttf');
+}    
+
+*{
+
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.contato{
+    width: 100%;
+    max-width: 200px;
+}
+.form{
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+}
+
+.field{
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #DDD;
+    border-radius: 5px;
+    font-family: Arial;
+}
+
+textarea{
+    height: 150px;
+    width: 400px;
+}
+
+.button{
+    background-color: #f7a10c;
+    border: none;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 30px;
+    font-family: 'thebold';
+    color:  #2d2c2c;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.content{
+    background-color: #2d2c2c;
+    width: 100%;
+    height: 455px;
+    display: flex;
+    justify-content: center;
+
+}
+
+.header{
+    background-color: #f7a10c;
+    height: 100px;
+    display: block;
+}
+
+.conteudo-geral-mid .sub-header{
+    background-color: #ffffff;
+    height: 50px;
+    width: 100%;
+}
+
+.header-logo{
+    border-bottom-right-radius: 5%;
+    border-bottom-left-radius: 5%;
+    position:relative;
+    left: 50%;
+    transform: translateX(-50%);
+    
+    display: inline-block;
+    background-color: rgb(255, 255, 255);
+    height: 180px;
+    width: 150px;
+    box-shadow: 0px 0px 25px #2c2c2cd4;
+    
+}
+
+.header-logo:hover{
+    cursor: pointer;
+    box-shadow: 0px 0px 20px #afafaf91;
+    transition: .1s;
+    width: 153px;
+    height: 183px;
+
+}
+
+.header .header-logo .logo{
+    width: 70%;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 100%);
+}
+
+.sub-header{
+    width: 100%;
+    height: 30px;
+}
+
+footer{
+    background-color: #f7a10c;
+    height: 50px;
+}
+
+.cop{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 12px;
+    position: relative;
+    text-align: center;
+    padding-top: 17px;
+    
+}
+
+
+</style>
+
+<body>
+
+    <header class="header">
+
+        <a link href="./index.html">
+            <div class="header-logo">
+                <img class="logo" src="./images/logo.png">
+            </div>
+        </a>
+
+    </header>
+
+    <div class="sub-header">
+        <p></p>
+    </div>
+
+    <section class="content">
+
+        <div class="formulario">
+
+            <form class="form" method="POST" action="./email.php">
+                <input class="field" name="name" placeholder="Seu nome">
+                <input class="field" name="email" placeholder="Seu e-mail">
+                <textarea class="field" name="message" placeholder="Digite sua mensagem aqui..."></textarea>
+                <input  class="button" type="submit" value="Enviar">
+            </form>
+
+        </div>
+
+    </section>
+    
+    <footer>
+        <p class="cop"> ©2021 Chaves - all rights reserved.</p>
+    </footer>
+
+
+</body>
+</html>
